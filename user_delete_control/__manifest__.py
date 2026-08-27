@@ -32,6 +32,13 @@
         "security/ir.model.access.csv",
         "views/res_users_views.xml",
     ],
+"images": [
+    "static/description/cover.png",
+    "static/description/screenshots/01-delete-permissions-settings.png",
+    "static/description/screenshots/02-delete.png",
+    "static/description/screenshots/03-delete.png",
+    "static/description/screenshots/04-delete.png",
+],
     "assets": {
         "web.assets_backend": [
             "user_delete_control/static/src/js/delete_control.js",
