@@ -23,28 +23,24 @@
 </section>
 
 
-<!-- ========================================================= -->
-<!-- FEATURES -->
-<!-- ========================================================= -->
-
 <section class="oe_container">
     <div class="oe_row oe_spaced">
 
-        <h2 class="oe_slogan">✨ Features</h2>
+        <h2 class="oe_slogan">Features</h2>
 
         <div class="oe_span6">
             <ul>
-                <li>🔒 Disable record deletion for a specific user across the system.</li>
-                <li>🎯 Restrict deletion for specific record types/models.</li>
-                <li>🛡️ Backend protection through <code>unlink()</code>.</li>
+                <li>Disable record deletion for a specific user across the system.</li>
+                <li>Restrict deletion for specific record types/models.</li>
+                <li>Backend protection through <code>unlink()</code>.</li>
             </ul>
         </div>
 
         <div class="oe_span6">
             <ul>
-                <li>🖥️ Hide the Delete action from List and Form views.</li>
-                <li>👤 Configure deletion restrictions directly from the user form.</li>
-                <li>⚙️ Supports Odoo 18.</li>
+                <li>Hide the Delete action from List and Form views.</li>
+                <li>Configure deletion restrictions directly from the user form.</li>
+                <li>Supports Odoo 18.</li>
             </ul>
         </div>
 
@@ -52,28 +48,35 @@
 </section>
 
 
-<!-- ========================================================= -->
-<!-- CONFIGURATION -->
-<!-- ========================================================= -->
-
 <section class="oe_container">
     <div class="oe_row oe_spaced">
 
-        <h2 class="oe_slogan">⚙️ Configuration</h2>
+        <h2 class="oe_slogan">Configuration</h2>
 
         <p>After installing the module:</p>
 
         <ol>
             <li>
-                Go to <strong>Settings → Users &amp; Companies → Users</strong>.
+                Go to <strong>Settings &gt; Users &amp; Companies &gt; Users</strong>.
             </li>
-            <li>Open the user you want to configure.</li>
-            <li>Navigate to the <strong>Access Rights</strong> section.</li>
-            <li>Find <strong>Delete Permissions Control</strong>.</li>
+
+            <li>
+                Open the user you want to configure.
+            </li>
+
+            <li>
+                Navigate to the <strong>Access Rights</strong> section.
+            </li>
+
+            <li>
+                Find <strong>Delete Permissions Control</strong>.
+            </li>
+
             <li>
                 Enable <strong>Hide Delete Option in All Records</strong>
                 to prevent the user from deleting any record.
             </li>
+
             <li>
                 Alternatively, select specific models under
                 <strong>Hide Delete Option for Specific Records</strong>.
@@ -83,10 +86,6 @@
     </div>
 </section>
 
-
-<!-- ========================================================= -->
-<!-- SCREENSHOT 1 -->
-<!-- ========================================================= -->
 
 <section class="oe_container">
     <div class="oe_row oe_spaced">
@@ -108,14 +107,10 @@
 </section>
 
 
-<!-- ========================================================= -->
-<!-- HOW IT WORKS -->
-<!-- ========================================================= -->
-
 <section class="oe_container">
     <div class="oe_row oe_spaced">
 
-        <h2 class="oe_slogan">🛡️ How It Works</h2>
+        <h2 class="oe_slogan">How It Works</h2>
 
         <h3>User Interface Protection</h3>
 
@@ -141,10 +136,6 @@
 </section>
 
 
-<!-- ========================================================= -->
-<!-- SCREENSHOT 2 -->
-<!-- ========================================================= -->
-
 <section class="oe_container">
     <div class="oe_row oe_spaced">
 
@@ -165,10 +156,6 @@
 </section>
 
 
-<!-- ========================================================= -->
-<!-- SCREENSHOT 3 -->
-<!-- ========================================================= -->
-
 <section class="oe_container">
     <div class="oe_row oe_spaced">
 
@@ -182,16 +169,12 @@
 </section>
 
 
-<!-- ========================================================= -->
-<!-- EXAMPLES -->
-<!-- ========================================================= -->
-
 <section class="oe_container">
     <div class="oe_row oe_spaced">
 
-        <h2 class="oe_slogan">📋 Examples</h2>
+        <h2 class="oe_slogan">Examples</h2>
 
-        <table class="table table-bordered">
+        <table class="table table-bordered table-striped">
             <thead>
                 <tr>
                     <th>Configuration</th>
@@ -207,12 +190,17 @@
 
                 <tr>
                     <td>Restrict Contacts only</td>
-                    <td>User cannot delete Contacts but can delete other allowed records.</td>
+                    <td>
+                        User cannot delete Contacts but can delete other
+                        allowed records.
+                    </td>
                 </tr>
 
                 <tr>
                     <td>Restrict Products and Contacts</td>
-                    <td>User cannot delete Products or Contacts.</td>
+                    <td>
+                        User cannot delete Products or Contacts.
+                    </td>
                 </tr>
 
                 <tr>
@@ -225,10 +213,6 @@
     </div>
 </section>
 
-
-<!-- ========================================================= -->
-<!-- SCREENSHOT 4 -->
-<!-- ========================================================= -->
 
 <section class="oe_container">
     <div class="oe_row oe_spaced">
@@ -243,33 +227,29 @@
 </section>
 
 
-<!-- ========================================================= -->
-<!-- INSTALLATION -->
-<!-- ========================================================= -->
-
 <section class="oe_container">
     <div class="oe_row oe_spaced">
 
-        <h2 class="oe_slogan">📦 Installation</h2>
+        <h2 class="oe_slogan">Installation</h2>
 
         <ol>
             <li>Download or clone the module.</li>
+
             <li>
                 Place the <code>user_delete_control</code> directory
                 inside your Odoo custom addons directory.
             </li>
+
             <li>Restart the Odoo server.</li>
+
             <li>Update the Apps list.</li>
+
             <li>Install <strong>User Delete Control</strong>.</li>
         </ol>
 
     </div>
 </section>
 
-
-<!-- ========================================================= -->
-<!-- REQUIREMENTS -->
-<!-- ========================================================= -->
 
 <section class="oe_container">
     <div class="oe_row oe_spaced">
@@ -286,34 +266,41 @@
 </section>
 
 
-<!-- ========================================================= -->
-<!-- TECHNICAL INFORMATION -->
-<!-- ========================================================= -->
-
 <section class="oe_container">
     <div class="oe_row oe_spaced">
 
-        <h2 class="oe_slogan">🔧 Technical Information</h2>
+        <h2 class="oe_slogan">Technical Information</h2>
 
         <ul>
-            <li><strong>Module:</strong> <code>user_delete_control</code></li>
-            <li><strong>Version:</strong> <code>18.0.1.0.0</code></li>
-            <li><strong>License:</strong> LGPL-3</li>
-            <li><strong>Dependencies:</strong> <code>base</code>, <code>web</code></li>
+            <li>
+                <strong>Module:</strong>
+                <code>user_delete_control</code>
+            </li>
+
+            <li>
+                <strong>Version:</strong>
+                <code>18.0.1.0.0</code>
+            </li>
+
+            <li>
+                <strong>License:</strong>
+                LGPL-3
+            </li>
+
+            <li>
+                <strong>Dependencies:</strong>
+                <code>base</code>, <code>web</code>
+            </li>
         </ul>
 
     </div>
 </section>
 
 
-<!-- ========================================================= -->
-<!-- SUPPORT -->
-<!-- ========================================================= -->
-
 <section class="oe_container">
     <div class="oe_row oe_spaced">
 
-        <h2 class="oe_slogan">💬 Support</h2>
+        <h2 class="oe_slogan">Support</h2>
 
         <p>
             For questions, bug reports, or feature requests, please use
