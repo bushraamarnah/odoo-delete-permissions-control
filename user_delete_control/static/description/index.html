@@ -1,0 +1,328 @@
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+
+        <h1 class="oe_slogan">User Delete Control</h1>
+
+        <h3 class="oe_slogan">
+            Control record deletion permissions on a per-user basis
+        </h3>
+
+        <p class="oe_mt32">
+            <strong>User Delete Control</strong> is an Odoo 18 module that
+            gives administrators control over record deletion permissions
+            on a per-user basis.
+        </p>
+
+        <p>
+            The module provides both <strong>backend protection</strong> and
+            <strong>user interface protection</strong>, helping reduce
+            accidental or unauthorized record deletion.
+        </p>
+
+    </div>
+</section>
+
+
+<!-- ========================================================= -->
+<!-- FEATURES -->
+<!-- ========================================================= -->
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+
+        <h2 class="oe_slogan">✨ Features</h2>
+
+        <div class="oe_span6">
+            <ul>
+                <li>🔒 Disable record deletion for a specific user across the system.</li>
+                <li>🎯 Restrict deletion for specific record types/models.</li>
+                <li>🛡️ Backend protection through <code>unlink()</code>.</li>
+            </ul>
+        </div>
+
+        <div class="oe_span6">
+            <ul>
+                <li>🖥️ Hide the Delete action from List and Form views.</li>
+                <li>👤 Configure deletion restrictions directly from the user form.</li>
+                <li>⚙️ Supports Odoo 18.</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ========================================================= -->
+<!-- CONFIGURATION -->
+<!-- ========================================================= -->
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+
+        <h2 class="oe_slogan">⚙️ Configuration</h2>
+
+        <p>After installing the module:</p>
+
+        <ol>
+            <li>
+                Go to <strong>Settings → Users &amp; Companies → Users</strong>.
+            </li>
+            <li>Open the user you want to configure.</li>
+            <li>Navigate to the <strong>Access Rights</strong> section.</li>
+            <li>Find <strong>Delete Permissions Control</strong>.</li>
+            <li>
+                Enable <strong>Hide Delete Option in All Records</strong>
+                to prevent the user from deleting any record.
+            </li>
+            <li>
+                Alternatively, select specific models under
+                <strong>Hide Delete Option for Specific Records</strong>.
+            </li>
+        </ol>
+
+    </div>
+</section>
+
+
+<!-- ========================================================= -->
+<!-- SCREENSHOT 1 -->
+<!-- ========================================================= -->
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+
+        <h2 class="oe_slogan">Delete Permissions Control</h2>
+
+        <p class="text-center">
+            Configure deletion permissions directly from the user's
+            Access Rights.
+        </p>
+
+        <div class="text-center">
+            <img src="screenshots/01-delete-permissions-settings.png"
+                 class="img img-responsive center-block"
+                 style="max-width: 100%;"/>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ========================================================= -->
+<!-- HOW IT WORKS -->
+<!-- ========================================================= -->
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+
+        <h2 class="oe_slogan">🛡️ How It Works</h2>
+
+        <h3>User Interface Protection</h3>
+
+        <p>
+            The Delete action is hidden from List and Form views when
+            deletion is restricted for the current user.
+        </p>
+
+        <h3>Backend Protection</h3>
+
+        <p>
+            The module also protects the <code>unlink()</code> operation
+            at the backend level.
+        </p>
+
+        <p>
+            This means that hiding the Delete button is not the only
+            security mechanism. Unauthorized deletion attempts through
+            backend operations are also blocked.
+        </p>
+
+    </div>
+</section>
+
+
+<!-- ========================================================= -->
+<!-- SCREENSHOT 2 -->
+<!-- ========================================================= -->
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+
+        <h2 class="oe_slogan">Restricted Delete Action</h2>
+
+        <p class="text-center">
+            When deletion is restricted, the Delete action is hidden
+            from the user interface.
+        </p>
+
+        <div class="text-center">
+            <img src="screenshots/02-delete.png"
+                 class="img img-responsive center-block"
+                 style="max-width: 100%;"/>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ========================================================= -->
+<!-- SCREENSHOT 3 -->
+<!-- ========================================================= -->
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+
+        <div class="text-center">
+            <img src="screenshots/03-delete.png"
+                 class="img img-responsive center-block"
+                 style="max-width: 100%;"/>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ========================================================= -->
+<!-- EXAMPLES -->
+<!-- ========================================================= -->
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+
+        <h2 class="oe_slogan">📋 Examples</h2>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Configuration</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Hide Delete Option in All Records</td>
+                    <td>User cannot delete any record.</td>
+                </tr>
+
+                <tr>
+                    <td>Restrict Contacts only</td>
+                    <td>User cannot delete Contacts but can delete other allowed records.</td>
+                </tr>
+
+                <tr>
+                    <td>Restrict Products and Contacts</td>
+                    <td>User cannot delete Products or Contacts.</td>
+                </tr>
+
+                <tr>
+                    <td>No restrictions</td>
+                    <td>Normal Odoo deletion behavior.</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</section>
+
+
+<!-- ========================================================= -->
+<!-- SCREENSHOT 4 -->
+<!-- ========================================================= -->
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+
+        <div class="text-center">
+            <img src="screenshots/04-delete.png"
+                 class="img img-responsive center-block"
+                 style="max-width: 100%;"/>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ========================================================= -->
+<!-- INSTALLATION -->
+<!-- ========================================================= -->
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+
+        <h2 class="oe_slogan">📦 Installation</h2>
+
+        <ol>
+            <li>Download or clone the module.</li>
+            <li>
+                Place the <code>user_delete_control</code> directory
+                inside your Odoo custom addons directory.
+            </li>
+            <li>Restart the Odoo server.</li>
+            <li>Update the Apps list.</li>
+            <li>Install <strong>User Delete Control</strong>.</li>
+        </ol>
+
+    </div>
+</section>
+
+
+<!-- ========================================================= -->
+<!-- REQUIREMENTS -->
+<!-- ========================================================= -->
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+
+        <h2 class="oe_slogan">Requirements</h2>
+
+        <ul>
+            <li>Odoo 18.0</li>
+            <li>Odoo Enterprise or Community</li>
+            <li>Python 3</li>
+        </ul>
+
+    </div>
+</section>
+
+
+<!-- ========================================================= -->
+<!-- TECHNICAL INFORMATION -->
+<!-- ========================================================= -->
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+
+        <h2 class="oe_slogan">🔧 Technical Information</h2>
+
+        <ul>
+            <li><strong>Module:</strong> <code>user_delete_control</code></li>
+            <li><strong>Version:</strong> <code>18.0.1.0.0</code></li>
+            <li><strong>License:</strong> LGPL-3</li>
+            <li><strong>Dependencies:</strong> <code>base</code>, <code>web</code></li>
+        </ul>
+
+    </div>
+</section>
+
+
+<!-- ========================================================= -->
+<!-- SUPPORT -->
+<!-- ========================================================= -->
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+
+        <h2 class="oe_slogan">💬 Support</h2>
+
+        <p>
+            For questions, bug reports, or feature requests, please use
+            the GitHub repository issue tracker.
+        </p>
+
+        <p>
+            <strong>Author:</strong> Bushra Alamarnah
+        </p>
+
+    </div>
+</section>
